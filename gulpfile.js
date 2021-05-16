@@ -50,7 +50,7 @@ function jsTask() {
       uglify({
         // mangle: { toplevel: true },
         compress: {
-          drop_console: true,
+          drop_console: false,
           //this option will strip oout console.log from JS code
           // drop_console: false,
           drop_debugger: false,
