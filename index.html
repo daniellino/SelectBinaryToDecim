@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select digits to make decimal</title>
+  <link rel="stylesheet" href="dist/css/style.css" />
+</head>
+
+<body>
+  <div class="jumbotron text-center bg-primary">
+    <h1>Select digits to make decimal</h1>
+  </div>
+  <div class="container">
+    <div class="quest-decimal">Select binary digits equivalent to the following decimal number:</div>
+    <div id="decimal-Value" class="col-xs-1 text-center"></div>
+    <div id='combAns' class='anim col-xs-1 text-center'> </div>
+    <table class='answersTable'>
+      <tr>
+
+        <td class=quesCol><a href='#'
+            onclick="clickedObjectContainer = this; makeItHidden(); givenAnsAddUp(); testForHidingRow(); return false;">
+            <div id='print_arr1' class='normalTableFormat'>0</div>
+          </a></td>
+        <td class=quesCol><a href='#'
+            onclick="clickedObjectContainer = this; makeItHidden(); givenAnsAddUp();  testForHidingRow(); return false;">
+            <div id='print_arr2' class='normalTableFormat'>1</div>
+          </a></td>
+      </tr>
+
+    </table>
+    <!--****************************************************Answers Table*************-->
+    </br>
+    <!--****************************************************Show answer button*************-->
+    <div class="row">
+      <div class="col-6"><a href='#' onclick="runToCheck();return false;">
+          <div class="btn_ans bg-primary">Show answer</div>
+        </a>
+      </div>
+      <div class="col-6">
+        <a href='#' onclick="resetWholeGeneration();return false;">
+          <div class="btn_reset bg-primary">Next question</div>
+        </a>
+      </div>
+
+    </div>
+
+
+
+
+    <!--****************************************************Show answer button*************-->
+
+    <!-- <div id='myAns' class="col-xs-1 text-center"></div> -->
+    <div id='matchField' class="col-xs-1 text-center"></div>
+    <p class="text-center">Programmed by: Daniel Hamidi &copy; 2021</p>
+  </div>
+
+
+  <script src="dist/js/main.min.js?cb=1621194357868"></script>
+</body>
+
+
+</html>
